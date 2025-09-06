@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hemant Chaudhary | Home</title>
+  <link rel="stylesheet" href="new-style.css" />
+  <link rel="stylesheet" href="home-styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Hemant Chaudhary</h1>
+    <nav>
+      <div class="menu-toggle" id="menu-toggle" aria-label="Toggle menu" role="button" tabindex="0">&#9776;</div>
+      <ul id="nav-list" role="menubar">
+        <li role="none"><a href="index.html" role="menuitem" class="active">Home</a></li>
+        <li role="none"><a href="about.html" role="menuitem">About Me</a></li>
+        <li role="none"><a href="skills.html" role="menuitem">Skills</a></li>
+        <li role="none"><a href="achievements.html" role="menuitem">Achievements</a></li>
+        <li role="none"><a href="contact.html" role="menuitem">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main aria-label="Home section">
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="hero-content">
+        <h2>Hello, I'm Hemant Chaudhary</h2>
+        <div class="typing-text" id="typing-text">
+          <span class="typed-text"></span><span class="cursor">&nbsp;</span>
+        </div>
+        <p class="hero-description">Passionate BCA Final Year student, aspiring full stack developer, and tech enthusiast from Greater Noida, India.</p>
+        <div class="cta-buttons">
+          <a href="contact.html" class="btn-primary" role="button">Get In Touch</a>
+          <a href="#" class="btn-secondary" role="button" id="download-resume">Download Resume</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="images/hemant.jpg" alt="Hemant Chaudhary" />
+        <div class="quick-stats">
+          <div class="stat">
+            <span class="stat-number">10+</span>
+            <span class="stat-label">Projects</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">5+</span>
+            <span class="stat-label">Technologies</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">3+</span>
+            <span class="stat-label">Years Learning</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Projects -->
+    <section class="projects-section">
+      <h3>Featured Projects</h3>
+      <div class="projects-grid">
+        <article class="project-card">
+          <div class="project-image">
+            <img src="images/project1.jpg" alt="Project 1" />
+          </div>
+          <div class="project-content">
+            <h4>Portfolio Website</h4>
+            <p>A responsive personal portfolio website built with modern web technologies.</p>
+            <div class="tech-stack">
+              <span>HTML5</span>
+              <span>CSS3</span>
+              <span>JavaScript</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link">Live Demo</a>
+              <a href="#" class="project-link">GitHub</a>
+            </div>
+          </div>
+        </article>
+        <article class="project-card">
+          <div class="project-image">
+            <img src="images/project2.jpg" alt="Project 2" />
+          </div>
+          <div class="project-content">
+            <h4>Task Manager App</h4>
+            <p>A full-stack task management application with user authentication.</p>
+            <div class="tech-stack">
+              <span>React</span>
+              <span>Node.js</span>
+              <span>MongoDB</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link">Live Demo</a>
+              <a href="#" class="project-link">GitHub</a>
+            </div>
+          </div>
+        </article>
+      </div>
+      <a href="#" class="btn-primary view-all">View All Projects</a>
+    </section>
+
+    <!-- Skills Preview -->
+    <section class="skills-preview">
+      <h3>Skills Overview</h3>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h4>Frontend</h4>
+          <div class="skill-icons">
+            <div class="skill-icon" data-skill="HTML5">
+              <i class="fab fa-html5"></i>
+            </div>
+            <div class="skill-icon" data-skill="CSS3">
+              <i class="fab fa-css3-alt"></i>
+            </div>
+            <div class="skill-icon" data-skill="JavaScript">
+              <i class="fab fa-js"></i>
+            </div>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h4>Backend</h4>
+          <div class="skill-icons">
+            <div class="skill-icon" data-skill="Node.js">
+              <i class="fab fa-node-js"></i>
+            </div>
+            <div class="skill-icon" data-skill="Python">
+              <i class="fab fa-python"></i>
+            </div>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h4>Tools</h4>
+          <div class="skill-icons">
+            <div class="skill-icon" data-skill="Git">
+              <i class="fab fa-git-alt"></i>
+            </div>
+            <div class="skill-icon" data-skill="VS Code">
+              <i class="fas fa-code"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="skills.html" class="btn-secondary">Explore All Skills</a>
+    </section>
+
+    <!-- Latest Achievements -->
+    <section class="achievements-preview">
+      <h3>Recent Achievements</h3>
+      <div class="achievements-grid">
+        <div class="achievement-card">
+          <div class="achievement-icon">🎓</div>
+          <h4>BCA Final Year</h4>
+          <p>Currently pursuing with excellent academic performance</p>
+        </div>
+        <div class="achievement-card">
+          <div class="achievement-icon">🏆</div>
+          <h4>Web Development</h4>
+          <p>Completed multiple full-stack projects</p>
+        </div>
+        <div class="achievement-card">
+          <div class="achievement-icon">📚</div>
+          <h4>Continuous Learning</h4>
+          <p>Actively learning new technologies and frameworks</p>
+        </div>
+      </div>
+      <a href="achievements.html" class="btn-secondary">View All Achievements</a>
+    </section>
+
+    <!-- Contact CTA -->
+    <section class="contact-cta">
+      <h3>Let's Work Together</h3>
+      <p>Have a project in mind? I'm always open to discussing new opportunities and ideas.</p>
+      <a href="contact.html" class="btn-primary">Start a Conversation</a>
+    </section>
+  </main>
+
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  
+  <script src="script.js"></script>
+  <script>
+    // Typing animation
+    const texts = [
+      "Full Stack Developer",
+      "BCA Student",
+      "Tech Enthusiast",
+      "Problem Solver"
+    ];
+    let textIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+    const typingDelay = 100;
+    const erasingDelay = 50;
+    const newTextDelay = 2000;
+
+    function typeText() {
+      const typedTextSpan = document.querySelector(".typed-text");
+      const currentText = texts[textIndex];
+      
+      if (isDeleting) {
+        typedTextSpan.textContent = currentText.substring(0, charIndex - 1);
+        charIndex--;
+      } else {
+        typedTextSpan.textContent = currentText.substring(0, charIndex + 1);
+        charIndex++;
+      }
+
+      if (!isDeleting && charIndex === currentText.length) {
+        isDeleting = true;
+        setTimeout(typeText, newTextDelay);
+      } else if (isDeleting && charIndex === 0) {
+        isDeleting = false;
+        textIndex = (textIndex + 1) % texts.length;
+        setTimeout(typeText, typingDelay);
+      } else {
+        setTimeout(typeText, isDeleting ? erasingDelay : typingDelay);
+      }
+    }
+
+    document.addEventListener("DOMContentLoaded", function() {
+      setTimeout(typeText, newTextDelay);
+    });
+  </script>
+</body>
+</html>
