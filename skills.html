@@ -3,28 +3,26 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Explore Hemant Chaudhary's programming, web development, and tools experience." />
   <title>Hemant Chaudhary | Skills</title>
   <link rel="stylesheet" href="new-style.css" />
 </head>
 <body>
-  <header>
-    <h1>Hemant Chaudhary</h1>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Hemant Chaudhary home"><span>HC</span><strong>Hemant<br />Chaudhary</strong></a>
     <nav>
-      <div class="menu-toggle" id="menu-toggle" aria-label="Toggle menu" role="button" tabindex="0">&#9776;</div>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Open menu" aria-expanded="false">Menu <span>+</span></button>
       <ul id="nav-list" role="menubar">
         <li role="none"><a href="index.html" role="menuitem">Home</a></li>
-        <li role="none"><a href="about.html" role="menuitem">About Me</a></li>
-        <li role="none"><a href="skills.html" role="menuitem" class="active">Skills</a></li>
-        <li role="none"><a href="achievements.html" role="menuitem">Achievements</a></li>
-        <li role="none"><a href="contact.html" role="menuitem">Contact</a></li>
+        <li><a href="about.html">About</a></li><li><a href="skills.html" class="active">Skills</a></li><li><a href="achievements.html">Journey</a></li><li><a href="contact.html">Contact <span aria-hidden="true">↗</span></a></li>
       </ul>
     </nav>
   </header>
 
-  <main aria-label="Skills section">
-    <h3>Skills & Expertise</h3>
+  <main class="page-main" aria-label="Skills section">
+    <section class="page-intro reveal"><p class="eyebrow">02 / The toolkit</p><h1>Tools are useful.<br /><em>Curiosity is better.</em></h1><p class="lead">A growing set of technical building blocks, connected by a willingness to figure things out.</p></section>
     <div class="skills-container">
-      <div class="skill-category">
+      <div class="skill-category reveal accent-lime">
         <h4>Programming Languages</h4>
         <ul>
           <li>Java</li>
@@ -34,7 +32,7 @@
           <li>HTML5 & CSS3</li>
         </ul>
       </div>
-      <div class="skill-category">
+      <div class="skill-category reveal accent-coral">
         <h4>Web Development</h4>
         <ul>
           <li>Front-end Development</li>
@@ -43,7 +41,7 @@
           <li>Version Control (Git)</li>
         </ul>
       </div>
-      <div class="skill-category">
+      <div class="skill-category reveal accent-blue">
         <h4>Tools & Technologies</h4>
         <ul>
           <li>VS Code</li>

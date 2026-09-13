@@ -17,16 +17,35 @@ document.addEventListener('DOMContentLoaded', () => {
   // Mobile menu toggle
   const menuToggle = document.getElementById('menu-toggle');
   const navList = document.getElementById('nav-list');
-  if (menuToggle) {
+  if (menuToggle && navList) {
     menuToggle.addEventListener('click', () => {
-      navList.classList.toggle('show');
+      const isOpen = navList.classList.toggle('show');
+      menuToggle.setAttribute('aria-expanded', String(isOpen));
+      menuToggle.querySelector('span').textContent = isOpen ? '×' : '+';
     });
     // Close menu on link click (mobile)
     navLinks.forEach(link => {
       link.addEventListener('click', () => {
         navList.classList.remove('show');
+        menuToggle.setAttribute('aria-expanded', 'false');
+        menuToggle.querySelector('span').textContent = '+';
       });
     });
+  }
+
+  const revealItems = document.querySelectorAll('.reveal');
+  if ('IntersectionObserver' in window) {
+    const revealObserver = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    revealItems.forEach(item => revealObserver.observe(item));
+  } else {
+    revealItems.forEach(item => item.classList.add('visible'));
   }
 
   // Contact form validation and submission (only on contact.html)
