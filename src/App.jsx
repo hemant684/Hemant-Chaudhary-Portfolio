@@ -50,6 +50,7 @@ const projects = [
   { number: '01', title: 'Shoe Doorsteps', type: 'E-commerce website', copy: 'A responsive online shoe store with product browsing, friendly navigation, and a mobile-first experience.', stack: 'React.js · Netlify', url: 'https://shoes-doorsteps.netlify.app' },
   { number: '02', title: 'E-MedCity', type: 'Healthcare web application', copy: 'A healthcare platform for appointments, doctor consultation, medicine delivery, and lab test scheduling.', stack: 'React.js · Node.js · MongoDB', url: 'https://e-medcity.netlify.app/' },
   { number: '03', title: 'Eye Tracking Mouse', type: 'Assistive technology', copy: 'A Python eye-tracking system that uses gaze and blinks for cursor control, supporting users with mobility challenges.', stack: 'Python · OpenCV · PyAutoGUI' },
+  { number: '04', title: 'SmartSpace', type: 'Rental booking platform', copy: 'A polished rental platform for discovering homes, venues, and studios across Nepal with flexible booking and secure local payments.', stack: 'React.js · Netlify', url: 'https://smart-space-rental-v2.netlify.app/' },
 ];
 
 function Home({ setPage }) { return <>
